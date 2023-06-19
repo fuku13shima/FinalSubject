@@ -31,5 +31,5 @@ a:active{
 .nav li {
     display: inline;		/*横並び*/
     list-style-type: none;
-    padding-right: 30px;
+    padding-right: 10%;
 }

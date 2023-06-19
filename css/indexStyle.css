@@ -10,4 +10,6 @@ p{
 
 .member li{
     list-style-type: none;
+    text-align: left;
+    margin-left: 40% ;
 }
