@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;				/*ページ最大幅設定*/
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.title{
+    text-align: center;  
+}
+
+/*リンクのテキスト色を変更*/
+a:link{
+    color: #d25833;		/*通常時*/
+}
+a:visited{
+    color: #d25833;		/*リンク先が訪問済時*/
+}
+a:hover{
+    color: #e3937a;		/*リンクにマウスポインタが乗っている時(タッチ端末では発生しない)*/
+}
+a:active{
+    color: #ff6a3b;		/*マウスボタンが押されている時*/
+}
+
+/*リスト項目*/
+.nav li {
+    display: inline;		/*横並び*/
+    list-style-type: none;
+    padding-right: 30px;
+}
