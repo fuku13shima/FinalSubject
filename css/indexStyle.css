@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.main{
+    text-align: center; 
+}
+
+p{
+    line-height: 1.6;	/*行間を調整*/
+}
+
+.member li{
+    list-style-type: none;
+    text-align: left;
+    margin-left: 40% ;
+}
