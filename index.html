@@ -11,11 +11,8 @@
 
     <body>
         <div class = "wrapper">
-            <header class = "header">
 
-            </header>
-
-            <main>
+            
                 <header class = "header">
                     <h1 class = "title">なんばぐみ</h1>
 
@@ -31,7 +28,7 @@
                         </ul>
                     </nav>
                     </header>
-
+                    <main>
                 <div class = "main">
 
                     <h3>班員一覧</h3>
@@ -55,19 +52,20 @@
 
                     <div class="colorCheng">
                         <h4>背景色変更</h4>
-                        <button class = "colorBut">colorCheng</button>
+                        <button id = "colorBut">colorCheng</button>
                     </div>
 
                     <div class="counter">
                         <h4>カウンター</h4>
-                        <button class="cntBut">countUp</button>
-                        <button class="resetBut">reset</button>
+                        <button id = "cntBut">countUp</button>
+                        <button id = "resetBut">reset</button>
 
                     </div>
 
                     <div class = "fortune">
                         <h4>おみくじ</h4>
-                        <button class = "fortuneBut">fortune</button>
+                        <button id = "fortuneBut">おみくじを引く</button>
+                        <div id = "fortuneResult"></div>
                     </div>
 
                 </div>
@@ -76,7 +74,8 @@
 
 
         </div>
-        
+      
+        <script src="js/index.js"></script>
     </body>
 
 </html>
