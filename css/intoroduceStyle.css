@@ -14,6 +14,27 @@ h5{
     text-align: right;
 }
 
+#imageBut{
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 40px;
+    margin: 10px auto;
+    transition: all 0.3s;
+    color: black;
+    font-size: large;
+    box-shadow: 2px 2px 0 0 black;
+    border-radius: 7px;
+    padding-bottom: 30px;
+    margin: 10px 15px;
+}
+
+button:hover{
+    transform: translate(2px, 2px);
+    box-shadow: none;
+  }
+
+
 table{
     background-color: azure;
     border-radius: 6px;
