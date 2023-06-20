@@ -1,0 +1,26 @@
+.menu{
+    display:flex;
+    margin: auto;
+    max-height: 20px;
+    max-width: 520px;
+}
+.syumi > p{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.syumi > h2{
+    margin-bottom: 10px;
+}
+
+li{
+    margin-left: auto;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+ul{
+    
+}
+
