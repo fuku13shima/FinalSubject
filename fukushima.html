@@ -9,6 +9,7 @@
         <link rel = "stylesheet" href = "css/fukushimaStyle.css">
     </head>
 
+    <script src="js/fukushima.js"></script>
     <body>
         <div class = "wrapper">
             <header class = "header">
@@ -29,7 +30,17 @@
                 </nav>
                 <h1>福島の紹介ページ</h1>
                 <h5 class="name">作成者：難波</h5>
-                <img src="images/fukusima.jpg" >
+                <img class="pengi" src="images/fukusima.jpg" id="xyz">
+
+                <div class="botan">
+                    <p>画像表示ボタン</p>
+                    <div class="sample1Area" id="makeImg">
+                        <input type="radio" name="sample1radio" id="sample1on" checked="" onclick="document.getElementById('xyz').style.display = 'block';">>
+                        <label for="sample1on">ON</label>
+                        <input type="radio" name="sample1radio" id="sample1off" onclick="document.getElementById('xyz').style.display = 'none';">>
+                        <label for="sample1off">OFF</label>
+                    </div>
+                </div>
 
                 <div class = "syumi">
                     <h2>得意科目</h2>
@@ -44,7 +55,7 @@
 
                 <div class = "comment">
                     <h4 class = "commenter">小橋</h4>
-                    <p class = "commentText">言葉が難しいので注意⚠️</p>
+                    <p class = "commentText">コメント</p>
 
                     <h4 class = "commenter">諏訪</h4>
                     <p class = "commentText">コメント</p>
@@ -61,4 +72,5 @@
         </div>
         <a class = "back" href = "index.html">topへ戻る</a>
     </body>
+    
 </html>
