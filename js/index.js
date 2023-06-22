@@ -93,3 +93,11 @@ fortuneBut.addEventListener('click' , () => {
 
     fortuneBut.style.display = 'none';
 });
+
+$(function () {
+    //回数の計数を初期化
+    $('#resetBut').on('click', function (e) {
+        $('#cntBut').text("0");
+        console.log("初期化しました。");
+    });
+});
