@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body { 
     background: linear-gradient(rgb(120, 83, 223), rgb(225, 148, 228)); 
 }
@@ -19,14 +21,15 @@ main > h1{
 
 .pengi{
     margin: auto;
+    width: 40%;
 }
 
-.syumi > p{
-    font-size: 30px;
-    margin-top: 10px;
+.syumi{
+    margin: auto;
 }
-.syumi > h2{
-    margin-bottom: 10px;
+
+.syumi p{
+    font-size: 30px;
 }
 
 li{
@@ -64,7 +67,7 @@ p.commentText{
 
 /*ボタンデザイン*/
 .sample1Area {
-    position: relative;            /* 親要素が基点       */
+    position:relative;            /* 親要素が基点       */
     margin: auto;                /* 中央寄せ           */
     width: 70px;               /* ボタンの横幅       */
     height: 25px;                /* ボタンの高さ       */
@@ -126,3 +129,8 @@ p.commentText{
 
 
 
+@media (max-width: 767px){
+    .botan{
+        margin-inline-start: 350px;
+    }
+}

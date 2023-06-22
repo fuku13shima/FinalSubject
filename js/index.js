@@ -49,11 +49,22 @@ function addCount(){
 
 window.addEventListener("load", ()=>{
     // 起動時の処理
-    counter = document.getElementById("counter");
+    counter = document.getElementById("count");
     btnAdd = document.getElementById("cntBut");
     n = 0;
 
     btnAdd.addEventListener("click", addCount);
+
+    
+    /*作成者:青木*/
+    $(function () {
+        //回数の計数を初期化
+        $('#resetBut').on('click', function (e) {
+            n = 0;
+            counter.innerHTML = n;
+            console.log("初期化しました。");
+        });
+    })
 });
 
 
@@ -94,10 +105,3 @@ fortuneBut.addEventListener('click' , () => {
     fortuneBut.style.display = 'none';
 });
 
-$(function () {
-    //回数の計数を初期化
-    $('#resetBut').on('click', function (e) {
-        $('#cntBut').text("0");
-        console.log("初期化しました。");
-    });
-});
