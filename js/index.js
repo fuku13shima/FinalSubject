@@ -81,12 +81,16 @@ window.addEventListener("load", ()=>{
 
 
 /*おみくじ機能*/
+// let fortune = document.getElementById('fortune');
+// console.log(fortune);
+// let fortuneBut =document.getElementById('fortuneBut');
+// console.log(fortuneBut);
+
 fortuneBut.addEventListener('click' , () => {
     var random = Math.floor(Math.random() * 10);
     console.log(random);
 
-    let fortuneBut =document.getElementById('fortuneBut');
-    console.log(fortuneBut);
+    
     let result =document.getElementById('fortuneResult');
     console.log(result);
     
