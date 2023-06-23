@@ -15,6 +15,7 @@ body{
 .context {
     width: 100%;
     position: absolute;
+    z-index: 20;
 }
 
 .context h1{
@@ -108,7 +109,7 @@ body{
     }
 
     100%{
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-1500px) rotate(720deg);
         opacity: 0;
         border-radius: 70%;
     }
@@ -120,6 +121,7 @@ body{
     margin: auto;
     max-height: 20px;
     max-width: 520px;
+    
 }
 main > h1{
     margin-bottom: 5px;
@@ -134,7 +136,7 @@ main > h1{
 .pengi{
     margin: auto;
     width: 40%;
-    z-index: 4;
+    z-index: 20;
 }
 
 .syumi{
