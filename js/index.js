@@ -39,8 +39,8 @@
 
 
 /*カウントボタン 作成者:ナンバ*/
-let counter, btnAdd;
-let n;
+var counter, btnAdd;
+var n = 0;
 
 function addCount(){
     n++;
@@ -51,23 +51,20 @@ window.addEventListener("load", ()=>{
     // 起動時の処理
     counter = document.getElementById("count");
     btnAdd = document.getElementById("cntBut");
-    n = 0;
 
     btnAdd.addEventListener("click", addCount);
-
-    
-    /*作成者:青木*/
-    $(function () {
-        //回数の計数を初期化
-        $('#resetBut').on('click', function (e) {
-            n = 0;
-            counter.innerHTML = n;
-            console.log("初期化しました。");
-        });
-    })
+ 
 });
 
-
+/*作成者:青木*/
+$(function () {
+    //回数の計数を初期化
+    $('#resetBut').on('click', function (e) {
+        n = 0;
+        counter.innerHTML = n;
+        console.log("初期化しました。");
+    });
+});
 
 
 
