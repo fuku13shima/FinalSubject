@@ -10,8 +10,9 @@ body{
     max-width: 960px;
 }
 
-.header{
+.header {
     margin: 0;
+    border-bottom: solid 1px #495558;
 }
 
 .title{
