@@ -18,3 +18,8 @@ imageBut.addEventListener('click', () => {
     }
 
 });
+
+
+
+
+
