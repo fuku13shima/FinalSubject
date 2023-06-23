@@ -1,15 +1,35 @@
+@charset "UTF-8";
+
+body { 
+    background: linear-gradient(rgb(120, 83, 223), rgb(225, 148, 228)); 
+}
 .menu{
     display:flex;
     margin: auto;
     max-height: 20px;
     max-width: 520px;
 }
-.syumi > p{
-    font-size: 30px;
-    margin-top: 10px;
+main > h1{
+    margin-bottom: 5px;
 }
-.syumi > h2{
-    margin-bottom: 10px;
+.name{
+    margin-top: 5px;
+}
+.title{
+    margin-bottom: auto;
+}
+
+.pengi{
+    margin: auto;
+    width: 40%;
+}
+
+.syumi{
+    margin: auto;
+}
+
+.syumi p{
+    font-size: 30px;
 }
 
 li{
@@ -20,7 +40,97 @@ li{
     text-align: center;
 }
 
-ul{
-    
+ul > li{
+    font-size: 18px;
 }
 
+.back{
+    margin-left: 20px;
+}
+
+h4.commenter{
+    margin-bottom: 1px;
+}
+
+p.commentText{
+    margin-top: 2px;
+}
+
+.botan{
+    margin-inline-start: 700px;
+}
+
+.botan > p{
+    font-size: 9pt;
+    margin: 0pt;
+}
+
+/*ボタンデザイン*/
+.sample1Area {
+    position:relative;            /* 親要素が基点       */
+    margin: auto;                /* 中央寄せ           */
+    width: 70px;               /* ボタンの横幅       */
+    height: 25px;                /* ボタンの高さ       */
+}
+
+.sample1Area input[type="radio"] {
+    display: none;            /* チェックボックス非表示 */
+}
+
+.sample1Area label {
+    display: block;               /* ボックス要素に変更 */
+    position: absolute;            /* 親要素からの相対位置*/
+    top: 0;                   /* 標準表示位置(上)   */
+    bottom: 0;                   /* 標準表示位置(下)   */
+    left: 0;                   /* 標準表示位置(左)   */
+    right: 0;                   /* 標準表示位置(右)   */
+    text-align: center;              /* 文字位置は中央     */
+    line-height: 25px;                /* 1行の高さ(中央寄せ)*/
+    font-size: 11pt;                /* 文字サイズ         */
+    font-weight: bold;                /* 太字               */
+    border: 2px solid #ccc;      /* 枠線(一旦四方向)   */
+}
+
+.sample1Area #sample1on + label {
+    right: 50%;                 /* 右端を中央に変更   */
+    border-radius: 6px 0 0 6px;         /* 角丸(左側の上下)   */
+    background: #eee;                /* 背景               */
+    color: #666;                /* 文字色             */
+    border-right: none;                /* 枠線の右側を消す   */
+}
+
+.sample1Area #sample1on:checked +label { /* 背景グラデーション */
+    background: linear-gradient(180deg, #00b359, #006633, #00b359);
+    color: #ec2525;                /* 文字色             */
+    text-shadow: 1px 1px 1px #333;    /* 文字に影を付ける   */
+}
+
+.sample1Area #sample1off:checked +label { /* 背景グラデーション */
+    background: linear-gradient(180deg, #00b359, #006633, #00b359);
+    color: #e40c0c;                /* 文字色             */
+    text-shadow: 1px 1px 1px #333;    /* 文字に影を付ける   */
+}
+
+.sample1Area #sample1off + label {
+    left: 50%;                 /* 左端を中央に変更   */
+    border-radius: 0 6px 6px 0;         /* 角丸(右側の上下)   */
+    background: #eee;                /* 背景               */
+    color: #666;                /* 文字色             */
+    border-left: none;                /* 枠線の左側を消す   */
+}
+
+.sample1Area #sample1off + label {
+    left: 50%;                 /* 左端を中央に変更   */
+    border-radius: 0 6px 6px 0;         /* 角丸(右側の上下)   */
+    background: #eee;                /* 背景               */
+    color: #666;                /* 文字色             */
+    border-left: none;                /* 枠線の左側を消す   */
+}
+
+
+
+@media (max-width: 767px){
+    .botan{
+        margin-inline-start: 350px;
+    }
+}

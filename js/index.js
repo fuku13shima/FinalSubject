@@ -1,43 +1,76 @@
-
 (()=>{
-            // ゼロ埋めして2桁の数値にする
-            const zero = n => (n < 10 ) ? "0" + n.toString() : n.toString();
+    // ゼロ埋めして2桁の数値にする
+    const zero = n => (n < 10) ? "0" + n.toString() : n.toString();
+  
+    // 日付の文字列化
+    const youbi = ["日","月","火","水","木","金","土"];
+    const getDateString = date =>
+      `${ date.getFullYear() }年 ${ zero(date.getMonth() + 1) }月  ${ zero(date.getDate()) }日 ${ youbi[date.getDay()] }曜日`;
+  
+    // 時間の文字列化
+    const getHourString = date =>
+      `${ zero(date.getHours()) }: ${ zero(date.getMinutes()) }: ${ zero(date.getSeconds()) }`;
+  
+    // DOMの構築を待つ
+    window.addEventListener('DOMContentLoaded',()=> {
+      // 日時を表示するDOM要素を取得
+      const dateDiv = document.getElementById("date");
+      const clockDiv = document.getElementById("clock");
+  
+      // 現在の日
+      let nowDate = null;
+  
+      // アニメーションフレームの処理
+      const updateClock = () => {
+        // 現在の日時を取得
+        const now = new Date();
+        // 日付が変わったら日付を再表示
+        if (nowDate !== now.getDate()) {
+          nowDate = now.getDate();
+          dateDiv.innerText = getDateString(now);
+        }
+  
+        // 時間を再表示
+        clockDiv.innerText = getHourString(now);
+  
+        // 次のアニメーションフレームをリクエスト
+        requestAnimationFrame(updateClock);
+      };
+  
+      // 最初のアニメーションフレームをリクエスト
+      requestAnimationFrame(updateClock);
+    });
+  })();
+  
 
-            // 日付の文字列化
-            const youbi = ["日","月","火","水","木","金","土"];
-            const getDateString = date =>
-                `${ date.getFullYear() }年 ${ zero(date.getMonth() + 1) }月  ${ zero(date.getDate()) }日 ${ youbi[date.getDay()] }曜日`;
-
-            // 時間の文字列化
-            const getHourString = date =>
-                `${ zero(date.getHours()) }: ${ zero(date.getMinutes()) }: ${ zero(date.getSeconds()) }`;
-
-            // DOMの構築を待つ
-            window.addEventListener('DOMContentLoaded',()=> {
-                // 日時を表示するDOM要素を取得
-                const dateDiv = document.getElementById("date");
-                const clockDiv = document.getElementById("clock");
-
-                // 現在の日
-                let nowDate = null;
-
-                // 1秒周期のタイマーセット
-                setInterval( ()=>{
-                    // 現在の日時を取得
-                    const now = new Date();
-                    // 日付が変わったら日付を再表示
-                    if( nowDate !== now.getDate() ) {
-                        nowDate = now.getDate();
-                        dateDiv.innerText = getDateString(now);
-                    }
-
-                    // 時間を再表示
-                    clockDiv.innerText = getHourString(now);
-                },1000);
-            });
-})();
+/*カウントボタン 作成者:ナンバ*/
+var counter, btnAdd;
+var n =0;
 
 
+function addCount(){
+    n++;
+    counter.innerHTML = n;
+}
+
+window.addEventListener("load", ()=>{
+    // 起動時の処理
+    counter = document.getElementById("count");
+    btnAdd = document.getElementById("cntBut");
+
+    btnAdd.addEventListener("click", addCount);
+ 
+});
+
+/*作成者:青木*/
+$(function () {
+    //回数の計数を初期化
+    $('#resetBut').on('click', function (e) {
+        n = 0;
+        counter.innerHTML = n;
+        console.log("初期化しました。");
+    });
+});
 
 
 
@@ -49,12 +82,16 @@
 
 
 /*おみくじ機能*/
+// let fortune = document.getElementById('fortune');
+// console.log(fortune);
+// let fortuneBut =document.getElementById('fortuneBut');
+// console.log(fortuneBut);
+
 fortuneBut.addEventListener('click' , () => {
     var random = Math.floor(Math.random() * 10);
     console.log(random);
 
-    let fortuneBut =document.getElementById('fortuneBut');
-    console.log(fortuneBut);
+    
     let result =document.getElementById('fortuneResult');
     console.log(result);
     
@@ -79,6 +116,7 @@ fortuneBut.addEventListener('click' , () => {
 });
 
 
+
 /*背景色変更*/
 document.addEventListener('DOMContentLoaded', function() {
     var button = document.querySelector('.color-button');
@@ -90,3 +128,4 @@ function changeBackgroundColor() {
     var randomColor = colors[Math.floor(Math.random() * colors.length)];
     document.body.style.backgroundColor = randomColor;
 }
+

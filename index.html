@@ -8,6 +8,10 @@
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/indexStyle.css">
 
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </head>
 
     <body>
@@ -43,11 +47,13 @@
                         </ul>
                     </nav>
 
+                    <div>
                         <h4>時計</h4>
-                        <script src="js/index.js"></script>
-                        <div id ="date"></div>
-                        <div id ="clock"></div>
-
+                        <div id="clock-container">
+                            <div id="date"></div>
+                            <div id="clock"></div>
+                           
+                          </div>
 
                     </div>
                 
@@ -60,6 +66,7 @@
 
                     <div class="counter">
                         <h4>カウンター</h4>
+                        <p id="count">0</p>
                         <button id = "cntBut">countUp</button>
                         <button id = "resetBut">reset</button>
 
