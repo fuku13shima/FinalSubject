@@ -15,6 +15,12 @@ body{
     border-bottom: solid 1px #495558;
 }
 
+.main{
+    border-top: 5px dotted lightblue;
+    border-bottom: 5px dotted lightblue;
+    padding-bottom: 50px;
+}
+
 .title{
     text-align: center;  
 }
@@ -38,4 +44,8 @@ a:active{
     display: inline;		/*横並び*/
     list-style-type: none;
     padding-right: 10%;
+}
+
+.member{
+    border-bottom: 5px dotted lightblue;
 }

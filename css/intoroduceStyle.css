@@ -16,6 +16,7 @@ h5{
 
 #imageBut{
     height: 30px;
+    width: 250px;
     background-color: white;
     border: 1px solid black;
     padding: 10px 40px;

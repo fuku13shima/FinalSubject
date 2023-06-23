@@ -45,7 +45,8 @@
 
 /*カウントボタン 作成者:ナンバ*/
 var counter, btnAdd;
-var n;
+var n =0;
+
 
 function addCount(){
     n++;
@@ -56,23 +57,22 @@ window.addEventListener("load", ()=>{
     // 起動時の処理
     counter = document.getElementById("count");
     btnAdd = document.getElementById("cntBut");
-    n = 0;
 
     btnAdd.addEventListener("click", addCount);
-
-    
-    
+ 
 });
 
 /*作成者:青木*/
-    $(function () {
-        //回数の計数を初期化
-        $('#resetBut').on('click', function (e) {
-            n = 0;
-            counter.innerHTML = n;
-            console.log("初期化しました。");
-        });
+$(function () {
+    //回数の計数を初期化
+    $('#resetBut').on('click', function (e) {
+        n = 0;
+        counter.innerHTML = n;
+        console.log("初期化しました。");
     });
+});
+
+
 
 
 
@@ -82,12 +82,16 @@ window.addEventListener("load", ()=>{
 
 
 /*おみくじ機能*/
+// let fortune = document.getElementById('fortune');
+// console.log(fortune);
+// let fortuneBut =document.getElementById('fortuneBut');
+// console.log(fortuneBut);
+
 fortuneBut.addEventListener('click' , () => {
     var random = Math.floor(Math.random() * 10);
     console.log(random);
 
-    let fortuneBut =document.getElementById('fortuneBut');
-    console.log(fortuneBut);
+    
     let result =document.getElementById('fortuneResult');
     console.log(result);
     
@@ -110,4 +114,18 @@ fortuneBut.addEventListener('click' , () => {
 
     fortuneBut.style.display = 'none';
 });
+
+
+
+/*背景色変更*/
+document.addEventListener('DOMContentLoaded', function() {
+    var button = document.querySelector('.color-button');
+    button.addEventListener('click', changeBackgroundColor);
+});
+
+function changeBackgroundColor() {
+    var colors = ['red', 'blue', 'green', 'yellow', 'orange', 'black'];
+    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor;
+}
 

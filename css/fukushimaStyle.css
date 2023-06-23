@@ -2,6 +2,7 @@
 
 body { 
     background: linear-gradient(rgb(120, 83, 223), rgb(225, 148, 228)); 
+    
 }
 .menu{
     display:flex;
