@@ -4,12 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
         <title>班員紹介　青木</title>
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/intoroduceStyle.css">
         <link rel = "stylesheet" href = "css/kobashi_style.css">
     </head>
-
+    <div id="loading">
+        <div class="loader"></div>
+    </div>
     <body>
         <div class="wrapper">
 
@@ -30,12 +33,12 @@
                 <h1>小橋 飛佑弥の紹介ページ</h1>
                 <h5>作成者：青木</h5>
 
-                <button id = "imageBut" class="item">画像表示</button>
+                <button id = "imageBut" class="fade-in fade-in-up">画像表示</button>
                 <div id = "image"></div>
-                <div class = "item_block">
+                <div class = "item_block" >
                     <table>
-                        <tr>
-                            <th class = "theme">
+                        <tr class="fade-in fade-in-left">
+                            <th class = "theme" >
                                 年齢
                             </th>
                             <td>
@@ -43,7 +46,7 @@
                             </td>
                         </tr>
 
-                        <tr>
+                        <tr class="fade-in fade-in-left">
                             <th class = "theme">
                                 誕生日
                             </th>
@@ -52,7 +55,7 @@
                             </td>
                         </tr>
 
-                        <tr>
+                        <tr class="fade-in fade-in-left">
                             <th class = "theme">
                                 得意科目
                             </th>
@@ -61,7 +64,7 @@
                             </td>
                         </tr>
 
-                        <tr>
+                        <tr class="fade-in fade-in-left">
                             <th class = "theme">
                                 好きな食べ物
                             </th>
@@ -72,22 +75,23 @@
 
                     </table>
 
-                    <div class = "comment">
+                    <div class = "comment fade-in fade-in-left">
                         <h4 class = "commenter">福島</h4>
-                        <p class = "commentText">授業の分からないところ質問できてえらい！</p>
+                        <p class = "commentText fade-in fade-in-left">授業の分からないところ質問できてえらい！</p>
 
                         <h4 class = "commenter">諏訪</h4>
-                        <p class = "commentText">コメント：いつも授業に積極的！</p>
+                        <p class = "commentText fade-in fade-in-left">コメント：いつも授業に積極的！</p>
 
                         <h4 class = "commenter">青木</h4>
-                        <p class= "commentText">沢山失敗して、沢山挫折して成長しろ！！！</p>
+                        <p class= "commentText fade-in fade-in-left">沢山失敗して、沢山挫折して成長しろ！！！</p>
 
                         <h4 class = "commenter">難波</h4>
-                        <p class = "commentText">小橋はいつもまじめで頑張り屋で、でもいつも少しズレた事しちゃって青木に叱られているイメージ。<br>そこが小橋の良いところで変わってほしくない部分、今後も頑張って行ってね！</p>
+                        <div class="fade-in fade-in-left">
+                        <p class = "commentText ">小橋はいつもまじめで頑張り屋で、でもいつも少しズレた事しちゃって青木に叱られているイメージ。<br>そこが小橋の良いところで変わってほしくない部分、今後も頑張って行ってね！</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
         <script src="js/kobashi.js"></script>
