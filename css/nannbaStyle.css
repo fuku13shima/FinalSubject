@@ -6,6 +6,10 @@
     max-height: 20px;
     max-width: 520px;
 }
+body { 
+    background: linear-gradient(rgb(196, 67, 76), rgb(204, 65, 30), rgb(204, 201, 30)); 
+    
+}
 #image-container {
     display: flex;
     justify-content: center;
@@ -32,4 +36,16 @@ li{
 .wrapper{
     text-align: center;
 }
+body {
+    text-align: center;
+}
 
+.container {
+    margin-top: 100px;
+}
+
+.color-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
