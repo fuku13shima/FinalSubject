@@ -16,7 +16,6 @@ body {
 .title {
 	text-align: center;
 }
-
 /*リンクのテキスト色を変更*/
 a:link {
 	color: #d25833; /*通常時*/
@@ -40,7 +39,7 @@ a:active {
 	list-style-type: none;
 	padding-right: 10%;
 }
-
+/*少しマージンを増やしました*/
 .commentText {
 	margin-bottom: 60px;
 }

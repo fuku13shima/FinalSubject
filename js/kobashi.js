@@ -35,8 +35,9 @@ window.addEventListener("scroll", function () {
 
     if (window_scrollY > 200) {
         $('html').css({ backgroundColor: '#e4e4ed', transition: "1.6s" });
+        $('table').css({ backgroundColor: '#97b4e0', transition: "1.6s" });
     } else {
         $('html').css({ backgroundColor: '#FFFFFF', transition: "1.6s" });
+        $('table').css({ backgroundColor: '#f0ffff', transition: "1.6s" });
     }
 });
-
