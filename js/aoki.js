@@ -1,3 +1,5 @@
+document.body.style.backgroundColor = '#CCFFCC';
+
 let butFlg = false;
 //ページ読み込み時の画像の状態
 let nowDisplay = image.style.display;
