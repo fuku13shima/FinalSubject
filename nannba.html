@@ -9,36 +9,16 @@
         <link rel = "stylesheet" href = "css/nannbaStyle.css">
 
         <title>画像表示/非表示</title>
-    <style>
-        #image-container {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-    </style>
+   
 
         <title>背景色変更</title>
-    <style>
-        body {
-            text-align: center;
-        }
-        
-        .container {
-            margin-top: 100px;
-        }
-        
-        .color-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+    
     </head>
 
     <body>
         
             <main>
-
+                <h1 class = "title">なんばぐみ</h1>
                 <nav class = "nav">
                     <ul class = "menu">
                         <li><a href = "index.html">home</a></li>
@@ -49,31 +29,13 @@
                         <li><a href = "fukushima.html">ふくしま</a></li>
                     </ul>
                 </nav>
-                <h1>難波颯哉の紹介（作成者：諏訪凱紀）</h1>
-               
+                <h1>難波颯哉の紹介</h1>
+               <h3>製作者：諏訪凱紀</h3>
 
                 <div id="image-container">
                     <img id="image" src="images/32610.jpg" alt="画像" style="border: double;" height="380" width="380"/>
                     <button id="toggle-button">表示/非表示</button>
                 </div>
-            
-                <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                        var image = document.getElementById('image');
-                        var toggleButton = document.getElementById('toggle-button');
-            
-                        toggleButton.addEventListener('click', function() {
-                            if (image.style.display === 'none') {
-                                image.style.display = 'block';
-                            } else {
-                                image.style.display = 'none';
-                            }
-                        });
-                    });
-                </script>
-               
-
-
                     
                <div class = "syumi">
                  <p>名前　難波颯哉</p>
@@ -99,9 +61,7 @@
             </main>
 
             
-            <div class="container">
-                <button class="color-button">背景色変更</button>
-            </div>
+           
         
             <script src="js/nannba.js"></script>
      
