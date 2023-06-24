@@ -13,8 +13,7 @@ imageBut.addEventListener('click', () => {
         $('#image').css({ opacity: '0' });
         setTimeout(function () {
             $("#image").stop().animate({ opacity: '1' }, 120);
-
-        },10);
+        }, 10);
 
     } else {
         butFlg = false;
@@ -25,10 +24,19 @@ imageBut.addEventListener('click', () => {
         }, 10);
         setTimeout(function () {
             image.innerHTML = '';
-        },130);
+        }, 130);
     }
 
 });
 
+window.addEventListener("scroll", function () {
+    let window_scrollY = window.pageYOffset;
+    console.log(window_scrollY);
 
+    if (window_scrollY > 200) {
+        $('html').css({ backgroundColor: '#e4e4ed', transition: "1.6s" });
+    } else {
+        $('html').css({ backgroundColor: '#FFFFFF', transition: "1.6s" });
+    }
+});
 
