@@ -13,13 +13,13 @@ imageBut.addEventListener('click' , () => {
     //console.log(image);
     if(butFlg === false){
         butFlg = true;
-        butText.innerHTML = '画像非表示';
+        butText.innerHTML = '画像表示';
         image.style.display = 'none';
         // image.innerHTML = '<img src = \"images/aoikiImage\" alt=\"\" width=\"40%\" height=\"40%\">';
     
     }else{
         butFlg = false;
-        butText.innerHTML = '画像表示';
+        butText.innerHTML = '画像非表示';
         image.style.display = nowDisplay;
         // image.innerHTML = '';
     }

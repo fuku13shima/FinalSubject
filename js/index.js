@@ -88,7 +88,7 @@ fortuneBut.addEventListener('click' , () => {
     console.log(result);
     
     if(random < 2){
-        result.innerHTML = '<h2>凶</h2><h5>ざんねん！</br>なんばぐみに入って運気を上げよう！</h5>';
+        result.innerHTML = '<h2 id = "kyou">凶</h2><h5>ざんねん！</br>なんばぐみに入って運気を上げよう！</h5>';
         // console.log('凶');
 
     }else if(random < 6){
