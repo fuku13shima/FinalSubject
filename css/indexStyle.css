@@ -41,3 +41,15 @@ p{
     font-family: Arial, sans-serif;
   }
   
+  @font-face {
+    font-family: 'fortuneFont';
+    src: url('../hkhigerei/hkhigerei.ttf');
+  }
+
+  #fortuneResult h2{
+    font-family: 'fortuneFont';
+  }
+
+  #fortuneResult #kyou{
+    font-family: 'Nico Moji';
+  }

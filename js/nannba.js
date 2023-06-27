@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var button = document.querySelector('.color-button');
-    button.addEventListener('click', changeBackgroundColor);
-});
+    var image = document.getElementById('image');
+    var toggleButton = document.getElementById('toggle-button');
 
-function changeBackgroundColor() {
-    var colors = ['red', 'blue', 'green', 'yellow', 'orange', 'black'];
-    var randomColor = colors[Math.floor(Math.random() * colors.length)];
-    document.body.style.backgroundColor = randomColor;
-}
+    toggleButton.addEventListener('click', function() {
+        if (image.style.display === 'none') {
+            image.style.display = 'block';
+        } else {
+            image.style.display = 'none';
+        }
+    });
+});
