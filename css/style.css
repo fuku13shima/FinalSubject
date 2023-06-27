@@ -42,7 +42,7 @@ a:active{
 .nav li {
     display: inline;		/*横並び*/
     list-style-type: none;
-    padding-right: 10%;
+    padding:0 5%;
 }
 
 .member{
