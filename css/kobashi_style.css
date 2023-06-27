@@ -37,17 +37,31 @@ a:active {
 .nav li {
 	display: inline; /*横並び*/
 	list-style-type: none;
-	padding-right: 10%;
+	width: 44px;
+	border: 1px solid #ff0000;
+	background-color: #ffffff;
+	transition: all 0.5s 0s ease;
+}
+.nav li:hover {
+	transition: steps(1, start);
+	background-color: #FFE5E5;
 }
 /*少しマージンを増やしました*/
 .commentText {
 	margin-bottom: 60px;
 }
 /*写真をちょっと大きくしました*/
-img{
-	width: 70%;
-	height: 70%;
+img, #image {
+	width: 100%;
+	height: 333.635px;
+	max-width: 672px;
+	margin: 0 auto;
 }
+img {
+	max-width: 672px;
+	margin: 0 auto;
+}
+
 .fade-in {
 	opacity: 0;
 	transition-duration: 500ms;
